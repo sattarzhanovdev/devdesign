@@ -1,0 +1,94 @@
+.banner{
+  padding: 0 100px;
+  position: relative;
+  @media (max-width: 1024px) {
+    padding: 0 50px;
+  }
+  @media (max-width: 822px) {
+    padding: 0 20px;
+  }
+  h1{
+    font-size: 70px;
+    font-family: 'Brygada 1918';
+    font-weight: 400;
+    @media (max-width: 1440px) {
+      font-size: 50px;
+    }
+    @media (max-width: 1024px) {
+      font-size: 45px;
+    }
+    @media (max-width: 912px) {
+      font-size: 36px;
+    }
+    @media (max-width: 712px) {
+      font-size: 25px;
+    }
+    @media (max-width: 427px) {
+      font-size: 24px;
+    }
+    @media (max-width: 417px) {
+      font-size: 20px;
+    }
+    @media (max-width: 363px) {
+      font-size: 16px;
+    }
+    span{
+      margin-left: 300px;
+      font-family: 'Brygada 1918';
+      font-weight: 400;
+      @media (max-width: 1440px) {
+        margin-left: 200px;
+      }
+      @media (max-width: 782px) {
+        margin-left: 150px;
+      }
+      @media (max-width: 634px) {
+        margin-left: 100px;
+      }
+      @media (max-width: 537px) {
+        margin-left: 60px;
+      }
+      @media (max-width: 437px) {
+        margin-left: 50px;
+      }
+      
+    }
+  }
+  p{
+    font-family: 'Montserrat';
+    width: 400px;
+    font-weight: 400;
+    position: absolute;
+    bottom: -90px;
+    font-size: 22px;
+    right: 400px;
+    @media (max-width: 1440px) {
+      width: 350px;
+      right: 300px;
+      font-size: 18px;
+    }
+    @media (max-width: 1440px) {
+      width: 300px;
+      right: 200px;
+      font-size: 16px;
+      bottom: -70px;
+    }
+    @media (max-width: 808px) {
+      right: 100px;
+    }
+    @media (max-width: 712px) {
+      width: 260px;
+      font-size: 14px;
+    }
+    @media (max-width: 634px) {
+      right: 20px;
+    }
+    @media (max-width: 537px) {
+      width: 200px;
+      font-size: 10px;
+    }
+    @media (max-width: 437px) {
+      bottom: -60px;
+    }
+  }
+}

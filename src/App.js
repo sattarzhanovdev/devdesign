@@ -5,7 +5,12 @@ import './App.scss'
 function App() {
   return (
     <div>
-      <Components.Navbar />
+      <header>
+        <Components.Navbar />
+      </header>
+      <main>
+        <Components.Banner />
+      </main>
     </div>
   )
 }
