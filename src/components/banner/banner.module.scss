@@ -7,53 +7,65 @@
   @media (max-width: 822px) {
     padding: 0 20px;
   }
-  h1{
-    font-size: 70px;
-    font-family: 'Brygada 1918';
-    font-weight: 400;
-    @media (max-width: 1440px) {
-      font-size: 50px;
-    }
-    @media (max-width: 1024px) {
-      font-size: 45px;
-    }
-    @media (max-width: 912px) {
-      font-size: 36px;
-    }
-    @media (max-width: 712px) {
-      font-size: 25px;
-    }
-    @media (max-width: 427px) {
-      font-size: 24px;
-    }
-    @media (max-width: 417px) {
-      font-size: 20px;
-    }
-    @media (max-width: 363px) {
-      font-size: 16px;
-    }
-    span{
-      margin-left: 300px;
-      font-family: 'Brygada 1918';
-      font-weight: 400;
-      @media (max-width: 1440px) {
-        margin-left: 200px;
+  .text{
+    .up{
+      overflow: hidden;
+      h1{
+        margin-left: 300px;
+        font-family: 'Brygada 1918';
+        font-weight: 400;
+        margin: 0;
+        @media (max-width: 1440px) {
+          margin-left: 200px;
+        }
+        @media (max-width: 782px) {
+          margin-left: 150px;
+        }
+        @media (max-width: 634px) {
+          margin-left: 100px;
+        }
+        @media (max-width: 537px) {
+          margin-left: 60px;
+        }
+        @media (max-width: 437px) {
+          margin-left: 50px;
+        }
       }
-      @media (max-width: 782px) {
-        margin-left: 150px;
+    }
+    div{
+      overflow: hidden;
+      h1{
+        font-size: 70px;
+        font-family: 'Brygada 1918';
+        font-weight: 400;
+        overflow: hidden;
+        margin: 0;
+        @media (max-width: 1440px) {
+          font-size: 50px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 45px;
+        }
+        @media (max-width: 912px) {
+          font-size: 36px;
+        }
+        @media (max-width: 712px) {
+          font-size: 25px;
+        }
+        @media (max-width: 427px) {
+          font-size: 24px;
+        }
+        @media (max-width: 417px) {
+          font-size: 20px;
+        }
+        @media (max-width: 363px) {
+          font-size: 16px;
+        }
+        
       }
-      @media (max-width: 634px) {
-        margin-left: 100px;
-      }
-      @media (max-width: 537px) {
-        margin-left: 60px;
-      }
-      @media (max-width: 437px) {
-        margin-left: 50px;
-      }
-      
     }
   }
+  
   p{
     font-family: 'Montserrat';
     width: 400px;
