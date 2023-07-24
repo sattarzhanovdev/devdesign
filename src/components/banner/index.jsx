@@ -10,6 +10,7 @@ const Banner = () => {
         <div className={c.up}>
           <h1
             data-aos="fade-up"
+            data-aos-delay="300"
           >
             Мы команда разработчиков
           </h1>
@@ -17,6 +18,7 @@ const Banner = () => {
         <div>
           <h1
             data-aos="fade-up"
+            data-aos-delay="300"
           >
             которые делают свои работы
           </h1>
@@ -24,6 +26,7 @@ const Banner = () => {
         <div>
           <h1
             data-aos="fade-up"
+            data-aos-delay="300"
           >
             с удовольствием
           </h1>
