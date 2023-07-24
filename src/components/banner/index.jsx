@@ -11,6 +11,7 @@ const Banner = () => {
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
+            data-aos-duration="1000"
           >
             Мы команда разработчиков
           </h1>
@@ -19,6 +20,7 @@ const Banner = () => {
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
+            data-aos-duration="1000"
           >
             которые делают свои работы
           </h1>
@@ -27,6 +29,7 @@ const Banner = () => {
           <h1
             data-aos="fade-up"
             data-aos-delay="300"
+            data-aos-duration="1000"
           >
             с удовольствием
           </h1>
