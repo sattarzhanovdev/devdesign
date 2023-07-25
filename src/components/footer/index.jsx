@@ -30,7 +30,7 @@ const Footer = () => {
             </button>
           </Link>
           <div className={c.socials}>
-            <Link to={'https://t.me/devdesignkg'}>
+            <Link to={'https://teleg.run/devdesignkg'}>
               <div>
                 <img src="/icons/telegram.svg" alt="telegram" />
               </div>
