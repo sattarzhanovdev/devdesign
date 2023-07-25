@@ -129,13 +129,16 @@
         }
       }
       .right{
-        img{
-          width: 600px;
-          @media (max-width: 1150px) {
-            width: 463px;
-          }
-          @media (max-width: 986px) {
-            width: 100%;
+        a{
+          text-decoration: none;
+          img{
+            width: 600px;
+            @media (max-width: 1150px) {
+              width: 463px;
+            }
+            @media (max-width: 986px) {
+              width: 100%;
+            }
           }
         }
       }

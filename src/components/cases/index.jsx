@@ -1,6 +1,7 @@
 import React from 'react'
 import c from './cases.module.scss'
 import { cases_base } from '../../utils'
+import { Link } from 'react-router-dom'
 
 const Cases = () => {
   return (
@@ -35,10 +36,12 @@ const Cases = () => {
                 <p>{item.type}</p>
               </div>
               <div className={c.right}>
-                <img 
-                  src={item.image} 
-                  alt={item.title}
-                />
+                <Link to={item.url}>
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                  />
+                </Link>
               </div>
             </div>
           ))
