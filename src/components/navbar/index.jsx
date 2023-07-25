@@ -13,7 +13,7 @@ const Navbar = () => {
 
   const toCases = () => {
     const cases = document.getElementById('cases');
-    cases.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
+    cases.scrollIntoView({behavior: "smooth"})
   }
   
   const toAbout = () => {
