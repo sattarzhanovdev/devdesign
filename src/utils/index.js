@@ -3,10 +3,10 @@ export const cases_base = [
     id: 1, 
     title: 'KELVIN',
     desc: 'Разработка интернет-магазина для Российского бренда “KELVIN”',
-    stacks: ['Frontend', 'Backend'],
+    stacks: ['Frontend', 'Backend', 'UX/UI'],
     type: 'Интернет-магазин',
     image: '/cases/kelvin.png',
-    url: 'https://kelvin-website.netlify.app'
+    url: 'https://kelvin-store.netlify.app/'
   },
   {
     id: 2, 
