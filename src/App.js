@@ -8,6 +8,11 @@ function App() {
       <header>
         <Components.Navbar />
       </header>
+
+      <main>
+        <Components.LastCases /> 
+        <Components.About /> 
+      </main>
     </div>
   )
 }

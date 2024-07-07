@@ -1,0 +1,169 @@
+.about{
+  width: 100%;
+  height: 100vh;
+  margin-top: 50px;
+  background: url('../../images/backmountains.png') center / cover ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @media (max-width: 1448px) {
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 50px 0;
+  }
+  .left{
+    width: 60%;
+    height: 80vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column; 
+    padding: 60px;
+    @media (max-width: 505px) {
+      padding: 60px 30px;
+    }
+    @media (max-width: 1448px) {
+      width: 80%;
+    }
+    .up{
+      p{
+        color: #A6A6A7;
+        margin: 0;
+        font-size: 18px;
+      }
+      h1{
+        color: white;
+        font-size: 46px;
+        font-weight: 500;
+        margin: 0;
+        margin-top: 4px;
+
+        @media (max-width: 446px) {
+          font-size: 26px;
+        }
+      }
+    }
+    .down{
+      display: flex;
+      align-items: flex-end;
+      gap: 22px;
+      @media (max-width: 1448px) {
+        margin-top: 60px;
+      }
+      @media (max-width: 896px) {
+        flex-direction: column;
+      }
+      .card{
+        h1{
+          color: white;
+          margin: 0;
+          font-weight: 600;
+          @media (max-width: 446px) {
+            font-size: 26px;
+          }
+        }
+        p{
+          width: 409px;
+          color: white;
+          margin: 0;
+          margin-top: 4px;
+          font-weight: 300;
+          line-height: 30px;
+          @media (max-width: 446px) {
+            width: 100%;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .right{
+    width: 420px;
+    height: 722px;
+    margin-right: 45px;
+    background: rgba($color: black, $alpha: 55%);
+    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 17px;
+    backdrop-filter: blur(23px);
+    -webkit-backdrop-filter: blur(23px);
+    @media (max-width: 1448px) {
+      width: 80%;
+      margin-left: 60px;
+    }
+    @media (max-width: 896px) {
+      margin-top: 200px;
+    }
+
+    @media (max-width: 710px) {
+      width: 65%;
+      height: 100%;
+    }
+
+    @media (max-width: 506px) {
+      margin-left: 30px;
+    }
+    .up{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px 72px;
+      @media (max-width: 1024px) {
+        flex-direction: column;
+      }
+      div{
+        width: 174px;
+        @media (max-width: 1636px) {
+          width: 150px;
+        }
+
+        @media (max-width: 1448px) {
+          width: 40%;
+        }
+
+        
+        
+        h1{
+          color: white;
+          font-size: 76px;
+          font-weight: 400;
+          margin: 0;
+        }
+        p{
+          color: white;
+          font-size: 18px;
+          margin: 0;
+          margin-top: -6px;
+        }
+      }
+    }
+
+    .down{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: column;
+      .stars{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        p{
+          color: white;
+        }
+      }
+      span{
+        width: 218px;
+        height: 2px;
+        background: white;
+        backdrop-filter: blur(23px);
+        -webkit-backdrop-filter: blur(23px)
+      }
+      p{
+        color: white;
+      }
+    }
+  }
+}

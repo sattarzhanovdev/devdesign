@@ -6,13 +6,12 @@
   top: 0;
   left: 0;
   transition: .3s;
-  
 
   .up{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding: 30px;
     img{
       width: 100px;
     }
@@ -29,6 +28,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    margin-top: 60px;
     li{
       list-style: none;
       a{
@@ -76,18 +76,17 @@
 .sidebar_none{
   width: 100%;
   height: 100vh;
-  background: white;
+  background: #FBFBF7;
   position: fixed;
   top: 0;
-  left:   100%;
+  left: 100%;
   transition: .3s;
-  
 
   .up{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 30px;
+    padding: 30px;
     img{
       width: 100px;
     }
@@ -104,6 +103,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 30px;
+    margin-top: 60px;
     li{
       list-style: none;
       a{
