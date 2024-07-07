@@ -19,24 +19,24 @@ const Sidebar = ({active, setActive}) => {
       <ul className={c.list}>
         {
           NavList.map(item => (
-            <li key={item.id}>
+            <li key={item.id} onClick={() => setActive(!active)}>
               <Link to={item.path}>
                 {item.title}
               </Link>
             </li>
           ))
         }
-        <li>
+        <li onClick={() => setActive(!active)}>
           <Link to={'/tarif/'}>
             Тарифы
           </Link>
         </li>
-        <li>
+        <li onClick={() => setActive(!active)}>
           <Link to={'/news/'}>
             Новости
           </Link>
         </li>
-        <li>
+        <li onClick={() => setActive(!active)}>
           <Link to={'/istorii/'}>
             Истории
           </Link>

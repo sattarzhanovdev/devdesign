@@ -2,9 +2,9 @@ import React from 'react'
 import c from './about.module.scss'
 import star from '../../icons/Star.svg'
 
-const About = () => {
+const About = ({AboutRef}) => {
   return (
-    <div className={c.about}>
+    <div className={c.about} ref={AboutRef}>
       <div className={c.left}>
         <div className={c.up}>
           <p>О нас</p>

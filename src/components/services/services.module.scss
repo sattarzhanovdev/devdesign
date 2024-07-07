@@ -1,0 +1,125 @@
+.services{
+  padding: 100px 60px;
+	@media (max-width: 505px) {
+		padding: 100px 30px;
+	}
+  background: #1E1F1D;
+  height: 100%;
+  .title{
+    h1{
+      width: 600px;
+      font-size: 46px;
+      margin: 0;
+      color: white;
+      font-weight: 500;
+      @media (max-width: 1024px) {
+        width: 460px;
+        font-size: 36px;
+      }
+      @media (max-width: 544px) {
+        width: 90%;
+        font-size: 28px;
+      }
+    }
+    p{
+      width: 293px;
+      font-size: 15.5px;
+      line-height: 25px;
+      color: #868488;
+      @media (max-width: 1024px) {
+        font-size: 12px;
+      }
+    }
+  }
+  .cards{
+    display: flex;
+    gap: 45px;
+    margin-top: 44px;
+    @media (max-width: 930px) {
+      flex-direction: column;
+    }
+    .card{
+      width: 520px;
+      height: 704px;
+      background: #FCFCF7 ;
+      padding: 30px 37px;
+      border-radius: 20px;
+      @media (max-width: 1440px) {
+        width: 320px;
+      }
+      @media (max-width: 1287px) {
+        width: 280px;
+      }
+      @media (max-width: 1222px) {
+        width: 260px;
+      }
+      @media (max-width: 389px) {
+        width: 75%;
+      }
+      &:nth-child(2){
+        margin-top: -100px;
+        border: 1px solid #FCFCF7;
+        background: none;
+        @media (max-width: 930px) {
+          margin: 0;
+        }
+        h1{
+          color: white;
+        }
+        div{
+          p{
+            color: white;
+          }
+        }
+      }
+      &:nth-child(3){
+        margin-top: -200px;
+        @media (max-width: 930px) {
+          margin: 0;
+        }
+      }
+      h1{
+        font-size: 36px;
+        margin: 0;
+      }
+      p{
+        font-size: 18px;
+        margin-top: 18px;
+        width: 293px;
+        color: #868488;
+        @media (max-width: 1222px) {
+          width: 90%;
+          font-size: 14px;
+        }
+      }
+      div{
+        margin-top: 24px;
+        h1{
+          font-size: 46px;
+          margin: 0;
+        }
+        p{
+          margin-top: -7px;
+          color: #000000;
+          margin: 0;
+        }
+      }
+
+      button{
+        width: 180px;
+        height: 40px;
+        background: none;
+        border: 1px solid #FD7632;
+        color: #FD7632;
+        border-radius: 50px;
+        margin-top: 300px;
+        cursor: pointer;
+
+        &:hover{
+          color: white;
+          background: #FD7632;
+        }
+      }
+    }
+  }
+}

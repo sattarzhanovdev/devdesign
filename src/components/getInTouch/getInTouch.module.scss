@@ -1,0 +1,54 @@
+.getInTouch{
+  margin-top: 150px;
+  padding: 0 60px;
+  padding-bottom: 100px;
+	@media (max-width: 505px) {
+		padding: 0 30px;
+	}
+  .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    @media (max-width: 1053px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h1{
+      width: 610px;
+      font-size: 36px;
+      @media (max-width: 1316px) {
+        width: 510px;
+        font-size: 26px;
+      }
+      @media (max-width: 1053px) {
+        width: 90%;
+      }
+    }
+
+    p{
+      width: 404px;
+      font-size: 15.5px;
+      @media (max-width: 1053px) {
+        width: 90%;
+      }
+    }
+
+    button{
+      width: 250px;
+      height: 60px;
+      border-radius: 50px;
+      border: 1px solid #FD7632;
+      background: none;
+      color: #FD7632;
+      transition: .3s;
+      &:hover{
+        background: #FD7632;
+        color: white;
+        cursor: pointer;
+      }
+    }
+  }
+}

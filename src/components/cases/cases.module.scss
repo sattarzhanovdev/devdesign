@@ -1,22 +1,22 @@
-.lastCases{
-  margin-top: 150px;
+.cases{
   padding: 0 60px;
 	@media (max-width: 505px) {
 		padding: 0 30px;
 	}
+  margin-top: 50px;
   .cards{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 20px;
     .card{
-      width: 420px;
+      width: 100%;
       height: 500px;
       display: flex;
       justify-content: space-between;
       flex-direction: column;
       border-radius: 12px;
-      background: url('./technofoods.png') center / cover;
       @media (max-width: 1308px) {
         &:nth-child(4){
           display: none;
@@ -71,59 +71,13 @@
             color: white ;
             margin: 0;
             font-weight: 400;
+            text-shadow: 0 0 10px black;
           }
           li{
             list-style: none;
             color: white ;
           }
         }
-      }
-    }
-  }
-
-  .info{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 40px;
-
-    @media (max-width: 1053px) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    h1{
-      width: 610px;
-      font-size: 36px;
-      @media (max-width: 1316px) {
-        width: 510px;
-        font-size: 26px;
-      }
-      @media (max-width: 1053px) {
-        width: 90%;
-      }
-    }
-
-    p{
-      width: 404px;
-      font-size: 15.5px;
-      @media (max-width: 1053px) {
-        width: 90%;
-      }
-    }
-
-    button{
-      width: 250px;
-      height: 60px;
-      border-radius: 50px;
-      border: 1px solid #FD7632;
-      background: none;
-      color: #FD7632;
-      transition: .3s;
-      &:hover{
-        background: #FD7632;
-        color: white;
-        cursor: pointer;
       }
     }
   }
