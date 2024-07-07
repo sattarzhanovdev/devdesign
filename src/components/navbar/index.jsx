@@ -1,84 +1,71 @@
 import React from 'react'
 import c from './navbar.module.scss'
 import { Link } from 'react-router-dom'
-import { Components } from '..'
+import { Images } from '../../images'
+import { NavList } from '../../utils'
+import { RiInstagramLine } from "react-icons/ri";
+import { FaBars } from 'react-icons/fa'
+import Sidebar from '../sidebar'
 
 const Navbar = () => {
-  const [ active, setActive ] = React.useState(false)
-
-  const toServices = () => {
-    const services = document.getElementById('services');
-    services.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
-  }
-
-  const toCases = () => {
-    const cases = document.getElementById('cases');
-    cases.scrollIntoView({behavior: "smooth"})
-  }
-  
-  const toAbout = () => {
-    const about = document.getElementById('about');
-    about.scrollIntoView({behavior: "smooth", block: "center", inline: "center"})
-  }
-
-  const toContact = () => {
-    const contact = document.getElementById('contact');
-    contact.scrollIntoView({behavior: "smooth"})
-  }
+  const [ active, setActive ] = React.useState(true)
 
   return (
-    <div className={c.navbar_container}>
-      <div className={c.navbar}>
-        <div className={c.logo}>
-          <img 
-            src="/images/logo.png" 
-            alt="logo"
-          />
-        </div>
-        <ul className={c.list}>
-          <li className={c.services} onClick={() => toServices()}>
-            <div onClick={() => setActive(!active)}>
-              <img 
-                src="/icons/arrow down.svg" 
-                alt="down"
-              />
-            </div>
-            Услуги  
-          </li>
-          <li onClick={() => toCases()}>
-            <span>
-              Кейсы
-              <li>Кейсы</li>
-            </span>
-          </li>
-          <li onClick={() => toAbout()}>
-            <span>
-              О студии
-              <li>О студии</li>
-            </span>
-          </li>
-          <li onClick={() => toContact()}>
-            <span>
-              Контакты
-              <li>Контакты</li>
-            </span>
-          </li>
-        </ul>
-        <div className={c.getInTouch}>
+    <div className={c.navbar}>
+      <div className={c.logo}>
+        <Link to={'/'}>
+          <img src={Images.logo} alt="DevDesign" />
+        </Link>
+      </div>
+      <ul className={c.list}>
+        {
+          NavList.map(item => (
+            <li key={item.id}>
+              <Link to={item.path}>
+                {item.title}
+              </Link>
+            </li>
+          ))
+        }
+      </ul>
+
+      <div className={c.bar}>
+        <li onClick={() => setActive(!active)}>
+          <FaBars />
+        </li>
+      </div>
+      <div className={c.nav_right}>
+        <ul className={c.right__nav}>
           <li>
-            <Link to={'tel:+996222121217'}>
-              Связаться с нами
+            <Link to={'/tarif/'}>
+              Тарифы
             </Link>
           </li>
-        </div>
-        <div className={c.bars} onClick={() => setActive(!active)}>
-          <img 
-            src="/icons/bars.svg" 
-            alt="bars icon"
-          />
-        </div>
+          <li>
+            <Link to={'/news/'}>
+              Новости
+            </Link>
+          </li>
+          <li>
+            <Link to={'/istorii/'}>
+              Истории
+            </Link>
+          </li>
+        </ul>
+        <span></span>
+        <li>
+          <Link to={'tel:+996222121217'}>
+            +996 (222) 12-12-17
+          </Link>
+        </li>
+        <li>
+          <Link to={'https://instagram.com/devdesign.kg/'} className={c.icon}>
+            <RiInstagramLine />
+          </Link>
+        </li>
       </div>
-      <Components.Sidebar active={active} setActive={setActive} />
+
+      <Sidebar active={active} setActive={setActive}/>
     </div>
   )
 }

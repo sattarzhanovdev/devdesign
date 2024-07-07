@@ -1,155 +1,107 @@
-.navbar_container{
-  width: 100%;
+.navbar{
   display: flex;
-  justify-content: center;
-  .navbar{
-    width: 100%;
-    padding: 50px 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 60px;
+
+  .logo{
+    img{
+      width: 120px;
+    }
+  }
+
+  .list{
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    @media (max-width: 1024px) {
-      padding: 50px;
+    gap: 15px;
+    margin-left: 300px;
+    @media (max-width: 1386px) {
+      margin-left: 200px;
     }
-    @media (max-width: 822px) {
-      padding: 50px 20px;
+    @media (max-width: 1286px) {
+      margin-left: 50px;
     }
-    .logo{
-      img{
-        width: 182px;
-        height: 23px;
-        @media (max-width: 822px) {
-          width: 134px;
-          height: auto;
+    @media (max-width: 826px) {
+      margin-left: 0px;
+    }
+    @media (max-width: 610px) {
+      display: none;
+    }
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        padding: 10px 26px;
+        border: 1px solid #868488;
+        border-radius: 50px;
+        color: #868488;
+        font-size: 15.5px;
+        transition: .3s;
+        &:hover{
+          border: 1px solid black;
+          color: black;
         }
-        @media (max-width: 500px) {
-          width: 111px;
-          height: auto;
+
+        @media (max-width: 1286px) {
+          font-size: 13.5px;
         }
       }
     }
-    .list{
+  }
+
+  .bar{
+    display: none;
+    li{
+      list-style: none;
+      font-size: 20px;
+    }
+    @media (max-width: 1116px) {
+      display: block;
+    }
+  }
+
+  
+
+  
+  .nav_right{
+    display: flex;
+    align-items: center;
+    gap: 13px;  
+    @media (max-width: 1116px) {
+      display: none;
+    }
+    .right__nav{
       display: flex;
       align-items: center;
-      position: absolute;
-      right: 400px;
-      @media (min-width: 1920px) {
-        right: 600px;
-      }
-      @media (min-width: 1025px) {
-        position: none;
-      }
-      @media (max-width: 1024px) {
-        position: absolute;
-        right: 100px;
-      }
-      @media (max-width: 1024px) {
-        position: absolute;
-        right: 100px;
-      }
-      @media (max-width: 822px) {
-        right: 50px;
-      }
-      @media (max-width: 712px) {
-        display: none;
-      }
-      li{
-        height: 28px;
-        display: flex;
-        overflow: hidden;
-        align-items: flex-start;
-        margin: 0 16px;
-        font-size: 20px;
-        letter-spacing: -1px;
-        @media (min-width: 1920px) {
-          height: 40px;
-          font-size: 30px;
-        }
-        @media (max-width: 1440px) {
-          margin: 0 10px;
-        }
-        @media (max-width: 1024px) {
-          font-size: 16px;
-        }
-        cursor: pointer;
-        &:hover span{
-          transform: translateY(-100%);
-        }
-        &:hover span li{
-          transform: translateY(100%);
-          color: rgba($color: #000000, $alpha: 70%);
-        }
-        span{
-          display: flex;
-          flex-direction: column;
-          align-content: flex-start;
-          gap: 10px;
-          transition: .4s;
-          li{
-            margin: 0;
-            transition: .4s;
-          }
-        }
-        &.services{
-          margin-right: 120px;
-          @media (max-width: 1440px) {
-            margin-right: 100px;
-          }
-          @media (max-width: 1024px) {
-            margin-right: 65px;
-          }
-          div{
-            width: 28px;
-            height: 28px;
-            background: black;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50px;
-            margin-right: 10px;
-          }
-        }
-      }
-    }
-    .getInTouch{
-      position: absolute;
-      right: 100px;
-      @media (max-width: 1024px) {
-        display: none;
-      }
+      gap: 30px;
       li{
         list-style: none;
         a{
-          @media (max-width: 1440px) {
-            font-size: 18.5px;
-          }
-          @media (min-width: 1920px) {
-            font-size: 30px;
-          }
-          font-size: 20px;
-          list-style: none;
-          position: relative;
-          text-decoration: none;
-          color: #000000;
-          cursor: pointer;
-          &::before{
-            content: '';
-            width: 100%;
-            height: 1px ;
-            background: black;
-            position: absolute;
-            bottom: 0;
-            left: 0;
+          text-decoration: none ;
+          color: #868488;
+          transition: .3s;
+          font-size: 12px;
+          &:hover{
+            color: black;
           }
         }
       }
     }
-    .bars{
-      display: none;
-      @media (max-width: 712px) {
-        display: block;
-        position: absolute;
-        right: 20px;
+    span{
+      width: 2px;
+      height: 20px;
+      background: #868488;
+    }
+    li{
+      list-style: none;
+      a{
+        text-decoration: none;
+        color: #868488;
+        padding: 0;
+        font-size: 12px;
+        &.icon{
+          font-size: 20px;
+        }
       }
     }
   }
