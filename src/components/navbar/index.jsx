@@ -8,7 +8,7 @@ import { FaBars } from 'react-icons/fa'
 import Sidebar from '../sidebar'
 
 const Navbar = () => {
-  const [ active, setActive ] = React.useState(true)
+  const [ active, setActive ] = React.useState(false)
 
   return (
     <div className={c.navbar}>
