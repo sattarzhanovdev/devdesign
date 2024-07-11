@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900');
-@import url(https://fonts.googleapis.com/css?family=Golos+Text:regular,500,600,700,800,900);
+
+@font-face {
+  font-family: "Gilroy Medium";
+  src: url("./fonts/Gilroy-Medium.ttf");
+}
 
 
 *{
-	font-family: Golos Text;
+	font-family: Gilroy Medium;
 }
 
 body{
