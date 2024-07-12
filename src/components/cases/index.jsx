@@ -12,7 +12,7 @@ const Cases = ({CasesRef}) => {
         {
           Portfolio.map(item => (
             <div className={c.card} key={item.id}>
-              <img src={item.image2} alt={item.title + ' Сайты'} />
+              <img src={item.image2} alt={item.title + ' Сайты' + ' Сайт'} />
               <div className={c.up}>
                 <p>
                   Case

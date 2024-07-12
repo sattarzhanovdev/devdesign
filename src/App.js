@@ -2,6 +2,7 @@ import React from 'react'
 import './App.scss'
 import { Components } from './components'
 import { useLocation } from 'react-router-dom'
+import { SEOKeys } from './utils'
 
 function App() {
   const path = useLocation().pathname
@@ -31,9 +32,18 @@ function App() {
 
   return (
     <div>
+      {
+        SEOKeys.map(item => (
+          <h1 className={"seo"}>
+            {item}
+          </h1>
+        ))
+      }
+
       <header>
         <Components.Navbar />
       </header>
+      
 
       <main>
         <Components.LastCases/> 

@@ -11,7 +11,7 @@ const LastCases = () => {
         {
           Portfolio.slice(0, 4).map(item => (
             <div className={c.card} key={item.id}>
-              <img src={item.image} alt={item.title + ' Сайт'} />
+              <img src={item.image} alt={item.title + ' Сайт' + ' Сайты'} />
               <div className={c.up}>
                 <p>
                   New case
