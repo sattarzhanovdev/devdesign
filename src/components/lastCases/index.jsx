@@ -10,7 +10,8 @@ const LastCases = () => {
       <div className={c.cards}>
         {
           Portfolio.slice(0, 4).map(item => (
-            <div className={c.card} style={{background: `url(${item.image})`}} key={item.id}>
+            <div className={c.card} key={item.id}>
+              <img src={item.image} alt={item.title + ' Сайт'} />
               <div className={c.up}>
                 <p>
                   New case
@@ -42,12 +43,12 @@ const LastCases = () => {
 
       <div className={c.info}>
         <h1>
-          Сату́рн — шестая планета по удалённости от Солнца и вторая
+          Свяжитесь с нами      
         </h1>
 
-        <p>
-          Великобрита́ния (русское название происходит от англ. Great Britain), или Соединённое Короле́вство (United Kingdom, сокр. UK)[19], полная официальная форма — Соединённое Короле́вство Великобрита́нии и Се́верной Ирла́ндии
-        </p>
+        <h3>
+          Приглашаем к сотрудничеству всех, кто готов вносить новшества и вместе торжественный высок
+        </h3>
 
         <Link to={'https://t.me/sattarzanov'}>
           <button>

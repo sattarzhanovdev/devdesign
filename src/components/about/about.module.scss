@@ -27,9 +27,10 @@
       width: 80%;
     }
     .up{
-      p{
+      h2{
         color: #A6A6A7;
         margin: 0;
+        font-family: 'Gilroy Regular';
         font-size: 18px;
       }
       h1{
@@ -38,7 +39,7 @@
         font-weight: 500;
         margin: 0;
         margin-top: 4px;
-
+        font-family: 'Gilroy Bold';
         @media (max-width: 446px) {
           font-size: 26px;
         }
@@ -59,17 +60,19 @@
           color: white;
           margin: 0;
           font-weight: 600;
+          font-family: 'Gilroy Bold';
           @media (max-width: 446px) {
             font-size: 26px;
           }
         }
-        p{
+        h2{
           width: 409px;
           color: white;
           margin: 0;
           margin-top: 4px;
           font-weight: 300;
           line-height: 30px;
+          font-size: 18px;
           @media (max-width: 446px) {
             width: 100%;
             font-size: 16px;
@@ -133,11 +136,12 @@
           font-weight: 400;
           margin: 0;
         }
-        p{
+        h2{
           color: white;
           font-size: 18px;
           margin: 0;
           margin-top: -6px;
+          font-family: 'Gilroy Thin';
         }
       }
     }
@@ -161,8 +165,10 @@
         backdrop-filter: blur(23px);
         -webkit-backdrop-filter: blur(23px)
       }
-      p{
+      h2{
         color: white;
+        font-family: 'Gilroy Thin';
+        font-size: 20px;
       }
     }
   }
