@@ -32,29 +32,9 @@ function App() {
 
   return (
     <div>
-      {
-        SEOKeys.map(item => (
-          <h1 className={"seo"}>
-            {item}
-          </h1>
-        ))
-      }
-
-      <header>
-        <Components.Navbar />
-      </header>
-      
-
-      <main>
-        <Components.LastCases/> 
-        <Components.About AboutRef={AboutRef}/> 
-        <Components.Services ServicesRef={ServicesRef} /> 
-        <Components.Cases CasesRef={CasesRef} /> 
-      </main>
-
-      <footer>
-        <Components.GetInTouch />
-      </footer>
+      <h1>
+        Ведутся технические работы
+      </h1>
     </div>
   )
 }
